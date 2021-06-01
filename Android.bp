@@ -34,6 +34,8 @@ cc_prebuilt_library_shared {
 		},
 	},
 	compile_multilib: "both",
+	shared_libs: ["com.quicinc.cne.constants@1.0", "libc++", "libc", "libcutils", "libdl", "libhidlbase", "liblog", "libm", "libutils"],
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -53,6 +55,8 @@ cc_prebuilt_library_shared {
 		},
 	},
 	compile_multilib: "both",
+	shared_libs: ["libc++", "libc", "libcutils", "libdl", "libhidlbase", "liblog", "libm", "libutils"],
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -72,6 +76,8 @@ cc_prebuilt_library_shared {
 		},
 	},
 	compile_multilib: "both",
+	shared_libs: ["libc++", "libc", "libcutils", "libdl", "libhidlbase", "liblog", "libm", "libutils"],
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -91,6 +97,8 @@ cc_prebuilt_library_shared {
 		},
 	},
 	compile_multilib: "both",
+	shared_libs: ["com.quicinc.cne.constants@1.0", "libc++", "libc", "libcutils", "libdl", "libhidlbase", "liblog", "libm", "libutils"],
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
@@ -110,22 +118,8 @@ cc_prebuilt_library_shared {
 		},
 	},
 	compile_multilib: "both",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libloc_api_v02",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libloc_api_v02.so"],
-		},
-	},
-	compile_multilib: "64",
+	shared_libs: ["com.quicinc.cne.constants@2.0", "libc++", "libc", "libcutils", "libdl", "libhidlbase", "liblog", "libm", "libutils"],
+	check_elf_files: false,
 	prefer: true,
 	soc_specific: true,
 }
